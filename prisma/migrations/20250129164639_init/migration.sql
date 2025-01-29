@@ -13,6 +13,8 @@ CREATE TABLE "tb_user" (
 -- CreateTable
 CREATE TABLE "tb_order" (
     "id" SERIAL NOT NULL,
+    "product" TEXT NOT NULL,
+    "quantity" INTEGER NOT NULL,
     "description" TEXT NOT NULL,
     "status" TEXT NOT NULL DEFAULT 'En preparación',
     "userId" INTEGER NOT NULL,

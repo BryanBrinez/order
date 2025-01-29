@@ -27,6 +27,8 @@ model User {
 
 model Order {
   id          Int    @id @default(autoincrement())
+  product     String
+  quantity    Int
   description String
   status      String @default("En preparación")
 
