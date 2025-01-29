@@ -59,6 +59,9 @@ A continuación, se describen los endpoints disponibles en la API:
 - **DELETE /orders/:id** – Eliminar un pedido.
 - **GET /orders/:id/status** – Consultar el estado de un pedido.
 
+⚠️ Todos los endpoints de órdenes requieren un token de autenticación en la cabecera de la solicitud. 
+⚠️ Los demás endpoints no requieren un cuerpo JSON en la solicitud.
+
 ## Uso de los Endpoints
 
 ### Registro de Usuario
@@ -68,7 +71,7 @@ Para registrar un usuario, se debe enviar la siguiente estructura JSON en Insomn
 ```json
 {
   "name": "Bryan",
-  "email": "bryan@hotmail.com",
+  "email": "bryan1@hotmail.com",
   "password": "123"
 }
 ```
